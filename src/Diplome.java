@@ -3,19 +3,19 @@ import java.util.List;
 
 public class Diplome {
 
-	private List<Examen> 	_examens = new ArrayList<Examen>();
+	private List<Examen> 	examens = new ArrayList<Examen>();
 	
 	public boolean	isValide() {
 		int notes = 0;
-		for (Examen examen : this._examens) {
+		for (Examen examen : this.examens) {
 			notes += examen.getNote();
 		}
-		return ((notes / this._examens.size() > 10) ? true : false);
+		return ((notes / this.examens.size() > 10) ? true : false);
 	}
 	
 	public void addExamen(Examen... examens) {
 		for (Examen examen : examens) {
-			this._examens.add(examen);
+			this.examens.add(examen);
 		}
 	}
 	

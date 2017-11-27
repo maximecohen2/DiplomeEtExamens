@@ -1,14 +1,14 @@
 
 public class Examen {
 	
-	private int	_note;
+	private int	note;
 
 	public int getNote() {
-		return this._note;
+		return this.note;
 	}
 
 	public void setNote(int note) {
-		this._note = note;
+		this.note = note;
 	}
 		
 }
