@@ -19,6 +19,12 @@ public class Diplome {
 		}
 	}
 	
+	private void afficherDetailDesNotes() {
+		for (Examen examen : this.examens) {
+			System.out.println(examen);
+		}
+	}
+	
 	public static void main(String[] args) {
 		Diplome diplome = new Diplome();
 		Examen examen = new Examen();
@@ -30,6 +36,7 @@ public class Diplome {
 		qcm.setNote(9);
 		diplome.addExamen(examen, projet, qcm);
 		System.out.println(diplome.isValide());
+		diplome.afficherDetailDesNotes();
 	}
 
 }
