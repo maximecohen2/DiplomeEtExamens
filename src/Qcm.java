@@ -8,7 +8,7 @@ public class Qcm extends Examen {
 	}
 	
 	public void setReponsesCorrectes(int nb) {
-		super.setNote(nb * 20 / this.nbQuestions);
+		this.note = nb * 20 / this.nbQuestions;
 		if (nb < 8) {
 			super.setAppreciation("insuffisant");
 		} else if (nb >= 8 && nb < 12) {

@@ -4,7 +4,7 @@ public class Projet extends Examen {
 	private String appreciationOral;
 
 	public void setNote(int noteEcrite, int noteOrale) {
-		super.setNote(noteEcrite + noteOrale);
+		this.note = noteEcrite + noteOrale;
 	}
 	
 	public void setAppreciation(String appreciationEcrit, String appreciationOral) {
